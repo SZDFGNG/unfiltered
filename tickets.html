@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNFILTERED Tickets</title>
+    <link rel="stylesheet" href="styles.css?v=20260330-1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body.tickets-page {
+            min-height: 100vh;
+            margin: 0;
+            padding-top: var(--nav-height-expanded);
+            background: #f7f9fd;
+        }
+
+        .tickets-page nav {
+            background: linear-gradient(90deg, #082a5b 0%, #0E4391 70%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+        }
+
+        .tickets-page .tickets-nav-inner {
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .tickets-page .tickets-nav-logo {
+            margin-right: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.25s ease;
+        }
+
+        .tickets-page .tickets-nav-logo:hover,
+        .tickets-page .tickets-nav-logo:focus-visible {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="tickets-page">
+    <nav aria-label="Tickets navigation">
+        <div class="nav-inner tickets-nav-inner">
+            <a href="index.html" class="nav-logo tickets-nav-logo" aria-label="Back to UNFILTERED homepage">
+                <img src="images/UNFILTERED_logo__WHITE_cropped.svg" alt="UNFILTERED">
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
